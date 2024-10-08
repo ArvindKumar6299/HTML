@@ -4,12 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1</title>
+
+    <style>
+        h1{
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+        }
+
+        .song-container{
+            display: flex;
+            justify-content: center; /* horizontally center */
+            flex-wrap: wrap; /* Makes items responsive*/
+            /* gap: 20px; */
+            /* margin: 20px; */
+        }
+        .song-container img{
+           height: 300px;
+           width: 400px;
+           object-fit: cover; /*ensure images maintain aspect ratio */
+        }
+
+        figure{
+            text-align: center; /* centers caption text below the image*/
+        }
+
+        /* Responsive design for smaller screen */
+        @media (max-width: 768px){
+          .song-container{
+            flex-direction: column;
+            align-items: center;
+          }
+          .song-container img{
+            width: 100%;   /* full width on small screens*/
+            max-width: 460px;
+          }
+        }
+    </style>
+    
 </head>
 <body>
     <div>
         <h1>Top Five Bollywood Songs</h1>
-        <div>
-            
+        <div class="song-container">
+            <figure>
+                <figcaption>Mirchi lagi Toach</figcaption>
+                <a href="https://youtu.be/EQlYzDdOLxI?si=-uA67mRgn8W1hBsd" target="_blank">
+                <img src="./assets/5feb3b4d22d117001cd66be5.jpg"
+                 alt=""
+                 height="300px"
+                 width="460px"
+                 loading="lazy"
+                >
+                </a>
+            </figure>
+            <figure>
+                <figcaption>
+                   Tu Jhuti Main Makkar
+                </figcaption>
+                <a href="https://youtu.be/2yeRRm9AIxI?si=zVnMPgre0XAv4nC7" target="_blank">
+                <img src="./assets/ANI-20231218161814.jpg" 
+                alt=""
+                height="300"
+                width="460"
+                loading="lazy"
+                >
+               </a>
+            </figure>
+
+            <figure>
+                <figcaption>Jhoome Jhoome</figcaption>
+                <a href="https://youtu.be/YxWlaYCA8MU?si=m_VqQ3CNkGMppeJl" target="_blank">
+                <img src="./assets/these-are-some-of-the-most-popular-bollywood-songs-from-v0-gz6161alz19c1.webp"
+                 alt=""
+                 height="300"
+                 weidth="460"
+                 loading="lazy"
+                 >
+                </a>
+            </figure>
+            <figure>
+                <figcaption>Kahoo na Kahoo</figcaption>
+                <a href="https://youtu.be/cNV5hLSa9H8?si=iw4PmG7mte6v1OGc" target="_blank">
+                <img src="./assets/top-120-hindi-love-songs-from-the-early-2000s.jpg"
+                 alt=""
+                 height="300"
+                 weidth="460"
+                 loading="lazy"
+                 >
+                </a>
+            </figure>
         </div>
     </div>
 </body>
